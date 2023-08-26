@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "8c02417d-e45d-48a2-aa83-3cb8f9e2b6d9",
+		"name": "PRUEBA 3P PRODUCTS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28046570"
+	},
+	"item": [
+		{
+			"name": "List Interest Rate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/interestrates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"interestrates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener ProductAccount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/interestrates/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"interestrates",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Tasa de Interes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"Ejemplo\",\r\n  \"interestRate\": 5.25,\r\n  \"state\": \"Activo\",\r\n  \"start\": \"2023-08-25T00:00:00Z\",\r\n  \"end\": \"2023-12-31T23:59:59Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/interestrates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"interestrates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear ProductAccount",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"Ejemplo\",\r\n  \"interestRate\": 5.25,\r\n  \"state\": \"Activo\",\r\n  \"start\": \"2023-08-25T00:00:00Z\",\r\n  \"end\": \"2023-12-31T23:59:59Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/interestrates/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"interestrates",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
